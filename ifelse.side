@@ -1,0 +1,163 @@
+{
+  "id": "adcdafe5-321b-45ef-ab45-5998dc9a4825",
+  "version": "2.0",
+  "name": "ifelse",
+  "url": "https://www.calculator.net/calorie-calculator.html",
+  "tests": [{
+    "id": "dfa265f7-4bf2-4b4b-a3e3-1b470f836403",
+    "name": "ifca",
+    "commands": [{
+      "id": "4deb8860-b145-4d65-b30b-f86f31765743",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/calorie-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b235a829-d63c-4b0c-906e-40b16a426707",
+      "comment": "",
+      "command": "store",
+      "target": "m",
+      "targets": [],
+      "value": "gender"
+    }, {
+      "id": "1eb243c2-fd86-48e4-8984-2f979a20c6dd",
+      "comment": "",
+      "command": "if",
+      "target": "${gender}===\"f\"",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e69da995-4977-46e6-9aaa-ce14c370fd4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=td > .cbcontainer:nth-child(2) > .rbmark",
+      "targets": [
+        ["css=td > .cbcontainer:nth-child(2) > .rbmark", "css:finder"],
+        ["xpath=//table[@id='calinputtable']/tbody/tr[2]/td[2]/label[2]/span", "xpath:idRelative"],
+        ["xpath=//label[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d56ec9a-cdec-49fc-be95-3f9cf9f5a0cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=cactivity",
+      "targets": [
+        ["id=cactivity", "id"],
+        ["name=cactivity", "name"],
+        ["css=#cactivity", "css:finder"],
+        ["xpath=//select[@id='cactivity']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/table[4]/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82ce1e1-89a2-41fe-b32b-1bb284fdfa02",
+      "comment": "",
+      "command": "select",
+      "target": "id=cactivity",
+      "targets": [],
+      "value": "label=Very Active: intense exercise 6-7 times/week"
+    }, {
+      "id": "f83a4701-ca8d-4540-8766-e1fb8bb650e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.panel2",
+      "targets": [
+        ["css=.panel2", "css:finder"],
+        ["xpath=//div[@id='content']/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aecc79d3-47ab-4361-ab80-911243c897af",
+      "comment": "",
+      "command": "else",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "23d6e4ac-b1bd-4630-9c6a-d6a31bfb9eff",
+      "comment": "",
+      "command": "click",
+      "target": "css=td > .cbcontainer:nth-child(1) > .rbmark",
+      "targets": [
+        ["css=td > .cbcontainer:nth-child(1) > .rbmark", "css:finder"],
+        ["xpath=//table[@id='calinputtable']/tbody/tr[2]/td[2]/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7d97cf0-a698-48e2-b548-65ff5c30626e",
+      "comment": "",
+      "command": "click",
+      "target": "id=cactivity",
+      "targets": [
+        ["id=cactivity", "id"],
+        ["name=cactivity", "name"],
+        ["css=#cactivity", "css:finder"],
+        ["xpath=//select[@id='cactivity']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[5]/table[4]/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fd0d0a0-03ca-47f5-b815-56c44bc71dd9",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6a7b2647-b55d-4929-8b86-5334eaa99ae6",
+    "name": "whileend",
+    "commands": [{
+      "id": "929a0800-f843-4b10-b8cb-43d28666c414",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return 1",
+      "targets": [],
+      "value": "c"
+    }, {
+      "id": "6c972b2f-b096-434b-b212-e67dbb5a8feb",
+      "comment": "",
+      "command": "while",
+      "target": "${c}<5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "80abe7ca-8320-43a7-8096-19160338a1d6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return ${c}+1",
+      "targets": [],
+      "value": "c"
+    }, {
+      "id": "25258628-5da3-4902-8f11-b1c8e5d76fa1",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d73adc4-0b0c-4cdc-975e-dd7e85821c7b",
+      "comment": "",
+      "command": "echo",
+      "target": "final value:${c}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e188b7fd-e84a-4b50-a54b-5bf7a8b4db5a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["dfa265f7-4bf2-4b4b-a3e3-1b470f836403", "6a7b2647-b55d-4929-8b86-5334eaa99ae6"]
+  }],
+  "urls": ["https://www.calculator.net/calorie-calculator.html"],
+  "plugins": []
+}
